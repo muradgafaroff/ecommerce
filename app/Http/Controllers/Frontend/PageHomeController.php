@@ -13,7 +13,9 @@ class PageHomeController extends Controller
 {
    public function anasayfa() {
 
-           $slider = Slider::where('status','1')->first();
+           $slider = Slider::where('status','1')->with('images')->first();
+         
+          
           $title = "Anasayfa";
          $about = About::where('id',1)->first();
 

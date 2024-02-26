@@ -23,15 +23,15 @@ class ProductFactory extends Factory
         $colortext = $color[random_int(0,3)];
         $size = $sizeList[random_int(0,4)];
         return [
-            'name'=> $colortext.' '.$size. ' Urun',
+            'name'=> $colortext.' '.$size. ' Praduct',
             'category_id'=> $categoryId[random_int(0,8)],
-            'short_text'=>  $categoryId[random_int(0,8)].' idli ürün',
+            'short_text'=>  $categoryId[random_int(0,8)].' idli product',
             'price'=> random_int(10,500),
             'size'=>  $size,
             'color'=>  $colortext,
             'qty'=> 1,
             'status'=> '1',
-            'content'=> 'Yazıları'
+            'content'=> 'text'
         ];
     }
 }

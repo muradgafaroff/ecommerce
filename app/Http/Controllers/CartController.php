@@ -43,7 +43,8 @@ class CartController extends Controller
         $cartItem = session()->get('cart') ?? [];
         $totalPrice = 0;
         foreach ($cartItem as $cart) {
-            $kdvOrani = $cart['kdv'] ?? 0;
+            
+            $kdvOrani = !empty($cart['kdv']) ? $cart['kdv'] : 18;
             $kdvtutar = ($cart['price'] * $cart['qty']) * ($kdvOrani / 100);
             $toplamTutar = $cart['price'] * $cart['qty'] + $kdvtutar;
             $totalPrice +=  $toplamTutar;

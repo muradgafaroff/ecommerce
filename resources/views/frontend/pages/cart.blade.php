@@ -55,7 +55,7 @@
                                 </div>
                             </td>
                             @php
-                                $kdvOrani = $cart['kdv'] ?? 0;
+                            $kdvOrani = !empty($cart['kdv']) ? $cart['kdv'] : 18;
                                 $fiyat = $cart['price'];
                                 $adet = $cart['qty'];
 

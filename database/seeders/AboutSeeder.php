@@ -14,17 +14,17 @@ class AboutSeeder extends Seeder
     public function run(): void
     {
        About::create([
-        'name'=>'Pratik Shop E-ticaret',
-        'content'=>'Hakkımızda yazısı burada',
+        'name'=>'MRD Shop E-commerce',
+        'content'=>'About Text',
         'text_1_icon'=>'icon-truck',
-        'text_1'=>'Ücretsiz Kargo',
-        'text_1_content'=>'Ürünlerinizi ücretsiz kargo sağlarız.',
+        'text_1'=>'Free Cargo',
+        'text_1_content'=>'We provide free shipping of your products.',
         'text_2_icon'=>'icon-refresh2',
-        'text_2'=>'Geri İade',
-        'text_2_content'=>'30 gün içinde geri iade sağlarız.',
+        'text_2'=>'Refund',
+        'text_2_content'=>'We provide refunds within 30 days.',
         'text_3_icon'=>'icon-help',
-        'text_3'=>'Destek',
-        'text_3_content'=>'7/24 Bize ulaşabilirsiniz.'
+        'text_3'=>'Support',
+        'text_3_content'=>'You can reach us 24/7.'
        ]);
     }
 }

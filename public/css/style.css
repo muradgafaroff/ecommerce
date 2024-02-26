@@ -456,6 +456,9 @@ a {
     font-size: 30px;
     font-weight: 900;
     color: #000; }
+    #h2mb {
+      color: #fff; 
+    }
     @media (min-width: 768px) {
       .site-blocks-cover h1 {
         font-size: 50px; } }

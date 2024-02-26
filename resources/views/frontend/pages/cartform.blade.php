@@ -114,7 +114,7 @@
                     @if (session()->get('cart'))
                     @foreach (session()->get('cart') as $key => $cart)
                     @php
-                        $kdvOrani = $cart['kdv'] ?? 0;
+                        $kdvOrani = !empty($cart['kdv']) ? $cart['kdv'] : 18;
                         $fiyat = $cart['price'];
                         $adet = $cart['qty'];
 
