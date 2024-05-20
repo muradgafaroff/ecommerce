@@ -9,12 +9,15 @@
               <input type="text" class="form-control border-0" placeholder="Ara">
             </form>
           </div>
-
+          
           <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
-            <div class="site-logo">
-              <a href="{{route('anasayfa')}}" class="js-logo-clone">{{config('app.name')}}</a>
-            </div>
-          </div>
+    <div class="site-logo">
+        <a href="{{ route('anasayfa') }}" class="js-logo-clone">{{ config('app.name') }}</a>
+    </div>
+</div>
+
+
+
 
           <div class="col-6 col-md-4 order-3 order-md-3 text-right">
             <div class="site-top-icons">

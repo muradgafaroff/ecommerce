@@ -13,6 +13,23 @@ body {
   background: #000;
   color: #fff; }
 
+  .site-logo {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAO0lEQVR42mJ4/A8AApABgX5AHd0BWT1/62MsyXNjZKXWmWAAKQWW0gJCFptAAAAAElFTkSuQmCC'); /* Yıldız deseni (örnek veri) */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-logo,
+.site-logo * {
+    color: white !important; /* Metin rengini beyaz yapar */
+}
+
+
+
+  
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -22,6 +39,10 @@ a {
 
 .text-black {
   color: #000; }
+
+
+
+
 
 .site-wrap:before {
   -webkit-transition: .3s all ease-in-out;
@@ -37,6 +58,8 @@ a {
   bottom: 0;
   opacity: 0;
   visibility: hidden; }
+
+  
 
 .offcanvas-menu .site-wrap {
   position: absolute;
@@ -130,6 +153,9 @@ a {
   .site-footer .footer-heading {
     font-size: 20px;
     color: #25262a; }
+
+
+  
 
 /* Navbar */
 .site-navbar {
@@ -754,3 +780,7 @@ a {
   width: 120px;
   border-radius: 50%;
   margin-bottom: 20px; }
+
+  
+
+

@@ -49,7 +49,7 @@ class SliderController extends Controller
             }
 
 
-            return back()->withSuccess('Başarıyla Oluşturuldu!');
+            return back()->withSuccess('Update success!');
     }
 
     /**

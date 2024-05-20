@@ -13,6 +13,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ImageSeoController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\ImageUploadController;
+use App\Http\Controllers\AjaxController;
 
 
 Route::group(['middleware'=>['panelsetting','auth'],'prefix'=>'panel','as'=>'panel.'], function() {
@@ -105,6 +106,10 @@ Route::group(['middleware'=>['panelsetting','auth'],'prefix'=>'panel','as'=>'pan
 
     Route::post('/image-gorsel/vitrin', [ImageUploadController::class,'vitrin'])->name('vitrin.yap');
     Route::delete('/image-gorsel/destroy', [ImageUploadController::class,'destroy'])->name('image.resimsil');
+
+
+
+    Route::get('/logout', [AjaxController::class, 'logout'])->name('logout');
 
 
 });
